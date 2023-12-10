@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/accordion.css" type="text/css">
+</head>
+<body>
+    
+    <header>
+        <div class="container content">
+        
+        <nav class="nav">
+            <h1 class="logo">P/G</h1>
+            <ul class="sp_nav">
+                <li class="nav_list">
+                    <a href="#" class="nav_link">Главное</a>
+                </li>
+                <li class="nav_list">
+                    <a href="#" class="nav_link">Интересное</a>
+                </li>
+                <li class="nav_list">
+                    <a href="#" class="nav_link">о компьютере</a>
+                </li>
+                <li class="nav_list">
+                    <a href="#" class="nav_link">цена</a>
+                </li>
+                <li class="nav_list">
+                    <a href="#" class="nav_link">контакты</a>
+                </li>
+            </ul>
+            <div class="burger" onclick="showMinu()">
+                <div class="berger_line   burgir_line_1"></div> 
+                <div class="berger_line   burgir_line_2"></div> 
+                <div class="berger_line   burgir_line_3"></div> 
+            </div>
+        </nav>
+        <button class="btn_theme_toggler">
+            <img src="img/sunny.png" alt="">
+        </button>
+    </div>
+    <div class="play">
+    <button class="peremotka" id="per" onclick="back()">
+        <img  src="img/per1.jpg" alt="">
+    </button>
+    <button class="peremotka" id="stop" onclick="stop()">
+        <img src="img/play.png" alt="">
+    </button>
+    <button class="peremotka" id="next" onclick="next()">
+        <img src="img/per2.jpg" alt="">
+    </button>
+    <button class="peremotka" id="audio" onclick="audio()">audio</button>
+    </div>
+    </header>
+    <main class="comp">
+        <div class="container">
+        <h1 class="pmoc">Ноутбук MSI Raider GE78 HX 13VH-094RU черный</h1>
+        <div class="hot">
+        <img class="img" src="img/8.webp" alt="">
+        <div class="pot">
+        <p class="opis">2560x1600, IPS, Intel Core i9-13950HX, ядра: 8 + 16 х 2.2 ГГц, RAM 32 ГБ, SSD 2000 ГБ, GeForce RTX 4080 для ноутбуков 12 ГБ, Windows 11 Home Single Language</p>
+            <p class="chek">450.999$</p>
+            <button id="btn_buy" class="button" onclick="buy()">Не дорого</button>
+        </div>
+    </div>
+    <div class="accordion" id="accordion-1">
+        <div class="accordion__item ">
+          <div class="accordion__header">
+            Характеристики
+          </div>
+          <div class="accordion__body">
+            Экран: 17.3 "; 2560х1440; IPS;
+Процессор: Intel Core i7 12800HX 2 ГГц (4.8 ГГц, в режиме Turbo)
+Графический процессор: NVIDIA GeForce RTX 3080 Ti для ноутбуков - 16 ГБ;
+Оперативная память: 32 ГБ, DDR5;
+Диск: SSD 2048 ГБ;
+Операционная система: Windows 11 Home;
+Клавиатура: с русскими буквами
+          </div>
+        </div>
+        <div class="accordion__item">
+          <div class="accordion__header">
+            о товаре 
+          </div>
+          <div class="accordion__body">
+            Экран: 17.3 "; 2560х1440; IPS;
+            Процессор: Intel Core i7 12800HX 2 ГГц (4.8 ГГц, в режиме Turbo)
+            Графический процессор: NVIDIA GeForce RTX 3080 Ti для ноутбуков - 16 ГБ;
+            Оперативная память: 32 ГБ, DDR5;
+            Диск: SSD 2048 ГБ;
+            Операционная система: Windows 11 Home;
+            Клавиатура: с русскими буквами
+          </div>
+        </div>
+       
+      </div>
+        </div>
+        <section class="box_shop">
+            <div class="box_shop_cocontent">
+                <button class="box_shop_btn" id="box">
+                    <img src="img/корзина.png" alt="" class="box_img">
+                </button>
+                <p class="box_chek">0</p>
+            </div>
+        </section>
+    </main>
+    
+    <sictiom class="time">
+        <div class="clock">
+            <div class="time-container" id="time">
+
+            </div>
+        </div>
+    </sictiom>
+    <section class="video-bg">
+    <video autoplay loop muted class="bgvideo" id="bgvideo" autopay loop muted>
+        <source src="видео/video3.mp4" type="video/mp4"></source>
+       </video>
+    </section>
+    <footer>
+        <div class="container footer__wrap">
+            <div class="company">
+                <h1 class="footer__title">Компания</h1>
+                <div class="line"></div>
+                <ul class="footer__list">
+                    <li class="company__item">
+                        <a href="" class="footer__link">О компании</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="buyer">
+                <h1 class="footer__title">Покупателям</h1>
+                <div class="line"></div>
+                <div class="buyer__ul">
+                    <ul class="footer__list">
+                        <li class="buyer__item">
+                            <a href="" class="footer__link">Как оформить заказ</a>
+                        </li>
+                    </ul>
+                    <ul class="footer__list">
+                        <li class="buyer__item">
+                            <a href="" class="footer__link">Юридическим лицам</a>
+                        </li>
+                    </ul>
+                    
+                </div>
+
+            </div>
+            <div class="in-touch">
+                <h1 class="footer__title">Оставайтесь на связи</h1>
+                <div class="line"></div>
+                <p class="in-touch__text">89021456678(c 8:00 до 23:00)</p>
+                <p class="in-touch__adress">Адреса магазинов в г. Мурманск</p>
+                <p class="in-touch__new">Следите за новинками и акциями:</p>
+                <input type="email" class="in-touch__folow" placeholder="Введите email и подпишитесь:">
+            </div>
+        </div>
+    </footer>
+
+    
+    <script src="js/oiw.js" type="text/javascript"></script>
+    <script src="js/accordion.js" type="text/javascript"></script>
+    <script src="js/burger.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/video.js"></script>
+</body>
+
+</html>
